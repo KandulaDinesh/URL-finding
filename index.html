@@ -1,0 +1,50 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company LinkedIn Finder</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Domain and LinkedIn Finder</h1>
+        <p>Upload your File in CSV Format</p>
+        <input type="file" id="fileInput" accept=".csv">
+        <button id="domainFinderButton">Domain Finder</button>
+        <button id="linkedinFinderButton">LinkedIn Finder</button>
+        <div id="results"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company LinkedIn Finder</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.4/xlsx.full.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
+
+</head>
+</head>
+<body>
+    <div class="container">
+        <h1>Domain and LinkedIn Finder</h1>
+        <p>Upload your File in CSV or Excel Format</p>
+        <input type="file" id="fileInput" accept=".csv,.xlsx,.xls">
+        <button id="domainFinderButton">Find Domains</button>
+        <button id="linkedinFinderButton">Find LinkedIn</button>
+        <div id="results"></div>
+        <div id="downloadButton" style="display: none;">
+            <button id="downloadResultButton" onclick="downloadExcel()">Download Results</button>
+        </div>
+        
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
